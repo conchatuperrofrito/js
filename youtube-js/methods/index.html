@@ -1,0 +1,730 @@
+<!-- <body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The charAt() Method</h2>
+    <p>charAt() returns the character at a specified index (position) in a string.</p>
+    <p>Get the first character in a string:</p>
+    <p id="demo"></p>
+    <script>
+        let text = "HELLO WORLD";
+        let letter = text.charAt(0);
+        document.getElementById("demo").innerHTML = letter;
+    </script>
+</body> -->
+
+<!-- Get the first character in a string: H -->
+
+
+
+
+<!-- arry y string  -->
+
+<!-- <body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The concat() Method</h2>
+    <p>The concat() method joins two or more strings.</p>
+    <p>Join 3 strings with a space between each string:</p>
+    <p id="demo"></p>
+    <script>
+        let text1 = "Hello";
+        let text2 = "world!";
+        let text3 = "Have a nice day!";
+        let result = text1.concat(" ", text2, " ", text3);
+
+        document.getElementById("demo").innerHTML = result;
+    </script>
+
+</body> -->
+<!-- Join 3 strings with a space between each string:
+
+Hello world! Have a nice day! -->
+
+
+<!-- debuelve arry  -->
+<!-- <p id="demo"></p>
+
+<script>
+    const arr1 = ["Cecilie", "Lone"];
+    const arr2 = ["Emil", "Tobias", "Linus"];
+
+    const children = arr1.concat(arr2);
+    document.getElementById("demo").innerHTML = children;
+</script> -->
+<!-- Cecilie,Lone,Emil,Tobias,Linus -->
+
+<!-- <p id="demo"></p>
+
+<script>
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin"];
+const children = arr1.concat(arr2, arr3); 
+document.getElementById("demo").innerHTML = children;
+</script> -->
+<!-- Cecilie,Lone,Emil,Tobias,Linus,Robin -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- busca desde que hay una considencia  -->
+
+<!-- <body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The startsWith() Method</h2>
+
+    <p>startsWith() returns true if a string starts with a specified string:</p>
+
+    <p id="demo"></p>
+
+    <p>startsWith() is not supported in Internet Explorer.</p>
+
+    <script>
+        let text = "Hello world, welcome to the universe.";
+        let result = text.startsWith("ello", 1);
+
+        document.getElementById("demo").innerHTML = result;
+    </script>
+
+</body> -->
+<!-- startsWith() returns true if a string starts with a specified string:
+
+true
+
+startsWith() is not supported in Internet Explorer. -->
+
+
+
+
+
+
+<!-- arry y string  -->
+<!-- hace una busqueda si existe un caracter o cadena  -->
+
+<!-- <body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The includes() Method</h2>
+
+    <p>includes() returns true if a string contains a specified string.</p>
+
+    <p>Find "world":</p>
+
+    <p id="demo"></p>
+
+    <p>includes() is not supported in Internet Explorer.</p>
+
+    <script>
+        let text = "Hello world, welcome to the universe.";
+        let result = text.includes("
+        ");
+
+        document.getElementById("demo").innerHTML = result;
+    </script>
+
+</body> -->
+<!-- Find "world":
+
+true
+
+includes() is not supported in Internet Explorer. -->
+
+
+<!-- arry  -->
+<!-- <p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.includes("Mango");
+</script> -->
+
+<!-- <p id="demo"></p>
+
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = fruits.includes("Banana", 3);
+</script>
+
+false -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- arry y string  -->
+
+
+<!--
+    <body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The indexOf() Method</h2>
+
+    <p>indexOf() returns the position of the first occurrence of a value in a string.</p>
+
+    <p>Find "welcome":</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let text = "Hello world, welcome to the universe.";
+        let result = text.indexOf("welcome");
+
+        document.getElementById("demo").innerHTML = result;
+    </script>
+
+</body> 
+-->
+
+
+<!-- 
+indexOf() devuelve la posición de la primera aparición de un valor en una cadena.
+
+Busque "bienvenido":
+
+13 -->
+
+
+<!-- arry  -->
+<!-- <p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let index = fruits.indexOf("Apple");
+
+document.getElementById("demo").innerHTML = index;
+</script> -->
+<!-- 2 -->
+
+
+<!-- <p id="demo"></p>
+
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango", "Apple"];
+    let index = fruits.indexOf("Apple", 3);
+
+    document.getElementById("demo").innerHTML = index;
+</script> -->
+<!-- 4 -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- busqueda con expreciones regulares  -->
+<!-- <p id="demo"></p>
+<script>
+    let text = "Mr. Blue has a blue house"
+    let position = text.search(/blue/i);
+
+    document.getElementById("demo").innerHTML = position;
+</script> -->
+
+<!-- search() searches a string for a value and returns the position of first the match:
+
+4 -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- repite una cadena  -->
+<!-- <p id="demo"></p>
+
+<p>repeat() is not supported in Internet Explorer.</p>
+
+<script>
+let text = "Hello world!";
+let result = text.repeat(2);
+
+document.getElementById("demo").innerHTML = result;
+</script> -->
+<!-- 
+repeat() returns a new string with a number of copies of a string:
+
+Hello world!Hello world!
+
+repeat() is not supported in Internet Explorer. -->
+
+
+
+
+
+
+
+
+
+<!-- reemplasa tambien con expreciones regulares  -->
+
+<!-- <p id="demo">Visit Microsoft!</p>
+
+<script>
+let text = document.getElementById("demo").innerHTML; 
+document.getElementById("demo").innerHTML = text.replace("Microsoft", "W3Schools");
+</script> -->
+
+<!-- Visit W3Schools! -->
+
+
+<!-- <p id="demo">Mr Blue has a blue house and a blue car.</p>
+
+<script>
+let str = document.getElementById("demo").innerHTML; 
+let res = str.replace(/blue/g, "red");
+document.getElementById("demo").innerHTML = res;
+</script> -->
+<!-- Mr Blue has a red house and a red car. -->
+
+
+
+
+
+<!-- arry y cadena  -->
+
+<!-- extrae una cadena   substring hace lo mismo -->
+
+<!-- <p id="demo"></p>
+
+<script>
+    let text = "Hello world!";
+    let result = text.slice(0, 5);
+
+    document.getElementById("demo").innerHTML = result;
+</script> -->
+
+<!-- Hello -->
+
+
+<!-- 
+<p id="demo"></p>
+
+<script>
+    let text = "Hello world!";
+    let result = text.slice(3);
+
+    document.getElementById("demo").innerHTML = result;
+</script> -->
+
+<!-- lo world! -->
+
+<!-- arry  debuelve arreglo -->
+<!-- <p id="demo"></p>
+<script>
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1, 3);
+
+document.getElementById("demo").innerHTML = citrus;
+</script> -->
+<!-- Orange,Lemon -->
+<!-- Orange,Lemon -->
+
+
+
+
+
+<!-- importante  split  -->
+<!-- <p id="demo"></p>
+
+<script>
+    let text = "How are you doing today?";
+    const myArray = text.split(" ", 3);
+
+    document.getElementById("demo").innerHTML = myArray;
+</script>
+
+How,are,you -->
+
+
+<!-- <p id="demo"></p>
+
+<script>
+let text = "How are you doing today?";
+const myArray = text.split("");
+
+document.getElementById("demo").innerHTML = myArray;
+</script> -->
+
+<!-- H,o,w, ,a,r,e, ,y,o,u, ,d,o,i,n,g, ,t,o,d,a,y,? -->
+
+
+
+
+
+
+<!-- <pre><p id="demo1"></p></pre>
+<pre><p id="demo2"></p></pre>
+
+<script>
+    let text = "     Hello World!     ";
+    let result = text.trim();
+
+    document.getElementById("demo1").innerHTML = text;
+    document.getElementById("demo2").innerHTML = result;
+</script>
+
+-------Hello World!     
+
+Hello World! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- arry  -->
+<!-- join   debuelve cadena -->
+
+<!-- <p id="demo"></p>
+
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let text = fruits.join();
+    // let text = fruits.join(" and ");
+
+    document.getElementById("demo").innerHTML = text;
+</script>
+
+Banana,Orange,Apple,Mango
+Banana and Orange and Apple and Mango -->
+
+
+
+
+
+
+
+<!-- en la posicion 2 remplazara la pocicion 0  -->
+<p id="demo"></p>
+
+<!-- <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    document.getElementById("demo").innerHTML = fruits.copyWithin(2, 0);
+</script> -->
+
+<!-- Banana,Orange,Banana,Orange -->
+
+
+
+
+<!-- reemplaza todos los elementos con  kiwi y debuleve arry-->
+<!-- <p id="demo"></p>
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.fill("Kiwi");
+</script> -->
+<!-- Kiwi,Kiwi,Kiwi,Kiwi -->
+
+
+
+
+
+
+
+
+
+<!-- reemplaza desde la pocicon 2 en adelante asta la pocicion 4  debuelve arry -->
+
+<!-- <p id="demo"></p>
+
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = fruits.fill("Kiwi", 2, 4);
+</script> -->
+<!-- Banana,Orange,Kiwi,Kiwi -->
+
+
+
+
+
+
+
+
+<!-- <p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.reverse();
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ordena con el alfabeto  -->
+
+
+<!-- <p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.sort();
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- en la pocicion 2 agrega el elemento  -->
+<!-- <p id="demo"></p>
+
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    // At position 2, add 2 elements: 
+    fruits.splice(2, 0, "Lemon");
+
+    document.getElementById("demo").innerHTML = fruits;
+</script>
+Banana,Orange,Lemon,Apple,Mango -->
+
+
+
+
+
+<!-- itera un areglo  -->
+<!-- <p id="demo"></p>
+
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    const myArray = fruits.valueOf();
+
+    document.getElementById("demo").innerHTML = myArray;
+</script> -->
+
+
+
+
+
+<!-- conprueba si todos los elementos son mayores de 18 
+<p id="demo"></p>
+
+<script>
+const ages = [32, 33, 16, 40];
+document.getElementById("demo").innerHTML = ages.every(checkAge);
+
+function checkAge(age) {
+  return age > 18;
+}
+</script> -->
+
+<!-- <p id="demo"></p>
+<script>
+const ages = [3, 10, 18, 20];
+document.getElementById("demo").innerHTML = ages.some(checkAdult);
+function checkAdult(age) {
+  return age > 18;
+}
+</script> -->
+
+<!-- false -->
+
+
+
+
+
+
+
+
+<!-- hace una accion por cada elemento del areglo  -->
+
+<!-- <p id="demo"></p>
+<script>
+const numbers = [65, 44, 12, 4];
+const newArr = numbers.map(myFunction);
+document.getElementById("demo").innerHTML = newArr;
+function myFunction(num) {
+  return num * 10;
+}
+</script> -->
+<!-- 650,440,120,40 -->
+
+
+
+
+
+
+<!-- filtra los elemto a base de una condicion  -->
+<!-- <p id="demo"></p>
+<script>
+    const ages = [32, 33, 16, 40];
+    document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+    function checkAdult(age) {
+        return age >= 18;
+    }
+</script> -->
+<!-- 32,33,40 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- encuentra el primer balor que cumpla la condicion  -->
+<!-- <p id="demo"></p>
+<script>
+    const ages = [3, 10, 18, 20];
+    document.getElementById("demo").innerHTML = ages.find(checkAge);
+    function checkAge(age) {
+        return age > 18;
+    }
+</script> -->
+<!-- 20 -->
+
+
+
+
+
+
+<!-- <p>forEach() calls a function for each element in an array:</p>
+
+<script>
+    let text = "";
+    const fruits = ["apple", "orange", "cherry"];
+    fruits.forEach(myFunction);
+
+    document.getElementById("demo").innerHTML = text;
+
+    function myFunction(item, index) {
+        text += index + ": " + item + "<br>";
+    }
+</script> -->
+<!-- 
+0: apple
+1: orange
+2: cherry -->
+
+
+
+
+
+
+
+
+
+
+<!-- <p id="demo"></p>
+
+<script>
+const numbers = [175, 50, 25];
+document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+
+function myFunc(total, num) {
+  return total - num;
+}
+</script> -->
+<!-- 100 -->
+
+
+
+
+
+
+
+
+<!-- 
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi"); -->
+
+<!-- "Banana", "Orange", "Apple", "Mango","Kiwi" -->
+
+
+
+
+
+
+
+
+<!-- pop() removes the last element of an array. -->
+
+<!-- <p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();
+document.getElementById("demo").innerHTML = fruits;
+</script> -->
+
+<!-- Banana,Orange,Apple -->
+
+
+
+<!-- shift() removes the first item of an array: -->
+
+<!-- <p id="demo"></p>
+
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.shift();
+
+    document.getElementById("demo").innerHTML = fruits;
+</script> -->
+
+
+<!-- Orange,Apple,Mango -->
